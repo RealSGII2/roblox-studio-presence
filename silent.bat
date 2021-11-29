@@ -1,0 +1,1 @@
+./roblox-studio-presence-win.exe -s

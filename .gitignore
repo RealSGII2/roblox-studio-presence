@@ -1,0 +1,9 @@
+# Secrets
+app.config.ts
+
+# Modules
+node_modules
+
+# Builds
+dist
+bin
