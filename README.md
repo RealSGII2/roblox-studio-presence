@@ -15,8 +15,8 @@ This is a program that will show your activity in Roblox Studio as a Discord Ric
 
 ## Getting Started
 
-1. Go to the [Releases]() page to download the latest version.
-2. Install the [Roblox Studio Plugin]() that comes with this program.
+1. Go to the [Releases](https://github.com/RealSGII2/roblox-studio-presence/releases) page to download the latest version.
+2. Install the [Roblox Studio Plugin](https://www.roblox.com/library/8131660858/RobloxStudioPresence) that comes with this program.
 3. Open the file that is for your operating system. _(Running the program from a command line with the `--silent` option will hide the prompt that opens._
     - **Windows Users:** You may optionally run _silent.bat_ to automatically run this command.
 4. Open Studio! It should work immediately.
@@ -26,6 +26,16 @@ This is a program that will show your activity in Roblox Studio as a Discord Ric
 
 1. This program was built using Node v14.15.3. Install that version.
 2. Clone the repository, then run `yarn` to install dependencies.
+3. Add the file `src/app.config.ts`, paste and edit the following content:
+
+```ts
+const port = process.env.PORT ?? 4001;
+const clientId = 'The Client Id of a Discord Application';
+const cookie = 'The ROBLOSECURITY cookie to log in to an account with.';
+
+export { port, clientId, cookie };
+```
+
 3. To preview changes, run `yarn dev`.
 4. To compile the application, run `yarn build`.
 
